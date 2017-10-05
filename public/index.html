@@ -1,0 +1,40 @@
+<html ng-app="rtcPrevent">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Laços de Superação - Rotaract Club de Cianorte</title>
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+
+		<link rel="manifest" href="/manifest.json">
+
+		<script src="lib/jquery/jquery-3.1.1.min.js"></script>
+		<script src="lib/angular/angular.js"></script>
+		<script src="lib/angular/angular-route.js"></script>
+		<script src="lib/angular/angular-ui-router.min.js"></script>
+		<script src="lib/angular/angular-messages.js"></script>
+		<script src="lib/angular/angular-storage.min.js"></script>
+		<script src="lib/angular/angular-locale_pt-br.js"></script>
+
+		<script src="js/app.js"></script>
+		<script src="js/config/routeConfig.js"></script>
+		<script src="js/controllers/rtcPreventCtrl.js"></script>
+		<script src="js/controllers/homeCtrl.js"></script>
+		<script src="js/controllers/agendarCtrl.js"></script>
+		<!--<script src="js/services/nomeServiceAPIService.js"></script>-->
+		<script src="js/value/configValue.js"></script>
+		<!--<script src="js/filters/nomeFiltroFilter.js"></script>-->
+
+		<meta name="apple-mobile-web-app-capable"          content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="apple-mobile-web-app-title"            content="Laços de Superação">
+		<meta name="msapplication-TileImage"               content="./img/icons/icon-apple.png">
+		<meta name="msapplication-TileColor"               content="#FFFFFF">
+		<link rel="apple-touch-icon" href="img/icons/icon-128x128.png">
+	</head>
+
+	<body>
+		<div ui-view></div>
+
+		<script src="js/script.js" async></script>
+	</body>
+</html>

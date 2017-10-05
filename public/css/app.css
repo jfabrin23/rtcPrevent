@@ -1,0 +1,139 @@
+:root {
+	--colorPrimary: #D81B5D;
+	--colorSecundary: #3E2C3A;
+	--colorBackground: #F2F2F2;
+	--colorHeader: #E0E0E0;
+	--colorInput: #BDBDBD;
+}
+
+@font-face {
+	font-family: 'Josefin-Light';
+	src: url('font/JosefinSans-Light.eot');
+	src: url('font/JosefinSans-Light.eot?#iefix') format('embedded-opentype'),
+		url('font/JosefinSans-Light.woff') format('woff'),
+		url('font/JosefinSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Black';
+	src: url('../fonts/Roboto-Black.eot');
+	src: url('../fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Black.woff') format('woff'),
+		url('../fonts/Roboto-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Regular.woff') format('woff'),
+		url('../fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0px;
+}
+.init {
+	width: 100vw;
+	height: 100vh;
+	background: var(--colorPrimary);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center
+}
+.init .marcadagua{
+	width: 100vw;
+	height: 100vh;
+	background: url("../img/laco.png");
+	background-repeat: no-repeat;
+	background-size: 52vh;
+}
+
+.init .footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center
+}
+
+.init .footer img{
+	width: 95vw;
+	padding-bottom: 1vh;
+}
+
+.menu {
+	width: 20vw;
+	height: 100vh;
+	background: var(--colorPrimary);
+	float: left;
+}
+.menu h3 {
+	font-family: 'Josefin-Light', sans-serif;
+	font-size: 5vw;
+	color: var(--colorSecundary);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.menu a {
+	text-decoration: none;
+}
+.menu a img {
+	width: 15vw;
+	text-align: center;
+	padding-top: 2vh;
+}
+.menu a label{
+	font-family: 'Josefin-Light', sans-serif;
+	font-size: 4vw;
+	color: var(--colorBackground);
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1vh;
+}
+
+.header {
+	width: 80vw;
+	height: 8vh;
+	background: var(--colorHeader);
+	top: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.header h1{
+	font-family: 'Josefin-Light', sans-serif;
+	font-size: 8vw;
+	color: var(--colorSecundary);
+	text-align: center;	
+}
+
+.home {
+	width: 76vw;
+	height: 92vh;
+	background: var(--colorBackground);
+	float: right;
+	overflow-y: scroll;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+.home p{
+	font-family: "Josefin-Light", sans-serif;
+	font-size: 5vw;
+	text-align: justify;
+}
