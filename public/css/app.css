@@ -16,26 +16,6 @@
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Roboto-Black';
-	src: url('../fonts/Roboto-Black.eot');
-	src: url('../fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Roboto-Black.woff') format('woff'),
-		url('../fonts/Roboto-Black.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Roboto-Regular';
-	src: url('../fonts/Roboto-Regular.eot');
-	src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Roboto-Regular.woff') format('woff'),
-		url('../fonts/Roboto-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
 body {
 	margin: 0px;
 }
@@ -136,4 +116,41 @@ body {
 	font-family: "Josefin-Light", sans-serif;
 	font-size: 5vw;
 	text-align: justify;
+}
+
+.agendar {
+	font-family: "Josefin-Light", sans-serif;
+	width: 76vw;
+	height: 92vh;
+	background: var(--colorBackground);
+	float: right;
+	overflow-y: scroll;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+.agendar form input {
+	font-family: "Josefin-Light", sans-serif;
+	width: 76vw;
+	margin-top: 5vh;
+	border: 0px;
+	border-bottom: 0.1vh solid var(--colorInput);
+	font-size: 3.5vh;
+	background: transparent;
+	color: var(--colorSecundary);
+}
+.agendar form select, .agendar form input[type=date]::selection{
+	font-family: "Josefin-Light", sans-serif;
+	width: 76vw;
+	margin-top: 5vh;
+	border: 0px;
+	border-bottom: 0.1vh solid var(--colorInput);
+	font-size: 3.5vh;
+	background: transparent;
+	color: var(--colorSecundary);
+	overflow: hidden;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none; 
+  background: url('../img/down.png') no-repeat right;
 }

@@ -1,8 +1,18 @@
 <div class="header">
     <h1>Agendar</h1>
 </div>
-<div class="home">
+<div class="agendar">
     <form>
-        <input type="text" class="input-form" name="local" id="local" ng-model="agendar.local" >
+        <select name="" id="" ng-model="agendar.tipoExame">
+            <option value="">Tipo de Exame</option>
+            <option value="E">Auto Exame</option>
+            <option value="C">Exame Clínico</option>
+        </select>
+        <input type="text" name="local" id="local" ng-model="agendar.local" placeholder="Data do Exame" onfocus="(this.type='date')">
+        <input type="text" name="local" id="local" ng-model="agendar.local" placeholder="Local">
+        <div id="map"></div>
+        <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+             <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+        </div>
     </form>
 </div>
